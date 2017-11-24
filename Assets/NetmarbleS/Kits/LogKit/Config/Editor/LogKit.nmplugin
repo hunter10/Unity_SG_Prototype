@@ -1,0 +1,12 @@
+{
+    "LogKit" :  {
+        "Android" : {
+            "Request" : {
+                "className" : "com.netmarble.log.impl.CommonLogManager"
+            }
+        },
+        "iOS" : {
+            "Request" : "NMGCommonLogManager"
+        }
+    }
+}

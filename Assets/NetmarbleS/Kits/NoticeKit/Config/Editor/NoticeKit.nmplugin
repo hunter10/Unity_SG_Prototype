@@ -1,0 +1,22 @@
+{
+    "NoticeKit" :  {
+        "Android" : {
+            "UIView" : {
+                "className" : "com.netmarble.uiview.Notice",
+                "location" : "10001...10002"
+            },
+            "Transfer" : {
+                "className" : "com.netmarble.uiview.Notice"
+            }
+        },
+        "iOS" : {
+            "UiView" : {
+                "NMGNoticeManager" : "10001...10002"
+            },
+            "Transfer" : {
+                "className" : "NMGNoticeManager",
+                "host" : "notice"
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "GoogleKit" :  {
+        "Setting" : "GoogleKitSetting",
+        "Android" : {
+            "Channel" : {
+                "className" : "com.netmarble.googleplus.GooglePlusImpl"
+            }
+        }
+    }
+}

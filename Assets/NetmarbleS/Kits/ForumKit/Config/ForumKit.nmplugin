@@ -1,0 +1,15 @@
+{
+    "ForumKit" :  {
+        "Android" : {
+            "UIView" : {
+                "className" : "com.netmarble.forum.view.ForumWebView",
+                "location" : "40001"
+            }
+        },
+        "iOS" : {
+            "UiView" : {
+                "NMGForumUIViewManager" : "40001"
+            }
+        }
+    }
+}

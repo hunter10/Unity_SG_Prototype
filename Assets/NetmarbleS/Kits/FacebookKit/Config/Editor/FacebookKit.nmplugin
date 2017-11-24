@@ -1,0 +1,13 @@
+{
+    "FacebookKit" :  {
+        "Setting" : "FacebookKitSetting",
+        "Android" : {
+            "Channel" : {
+                "className" : "com.netmarble.facebook.FacebookImpl"
+            }
+        },
+        "iOS" : {
+            "Channel" : "NMGFacebookManager"
+        }
+    }
+}

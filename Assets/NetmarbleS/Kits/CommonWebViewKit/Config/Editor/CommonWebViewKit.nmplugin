@@ -1,0 +1,15 @@
+{
+    "CommonWebViewKit" :  {
+        "Android" : {
+            "UIView" : {
+                "className" : "com.netmarble.uiview.CommonWebView",
+                "location" : "17001"
+            }
+        },
+        "iOS" : {
+            "UiView" : {
+                "NMGCommonWebViewManager" : "17001"
+            }
+        }
+    }
+}

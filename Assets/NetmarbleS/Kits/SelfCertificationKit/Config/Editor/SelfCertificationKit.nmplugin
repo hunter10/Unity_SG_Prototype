@@ -1,0 +1,15 @@
+{
+    "SelfCertificationKit" :  {
+        "Android" : {
+            "UIView" : {
+                "className" : "com.netmarble.uiview.SelfCertification",
+                "location" : "18001"
+            }
+        },
+        "iOS" : {
+            "UiView" : {
+                "NMGSelfCertificationManager" : "18001"
+            }
+        }
+    }
+}

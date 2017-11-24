@@ -1,0 +1,15 @@
+{
+    "CustomerSupportKit" :  {
+        "Android" : {
+            "UIView" : {
+                "className" : "com.netmarble.uiview.CustomerSupport",
+                "location" : "12001...12005"
+            }
+        },
+        "iOS" : {
+            "UiView" : {
+                "NMGCustomerSupportManager" : "12001...12005"
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "PromotionKit" :  {
+        "Android" : {
+            "UIView" : {
+                "className" : "com.netmarble.uiview.v2.Promotion",
+                "location" : "1...1000"
+            }
+        },
+        "iOS" : {
+            "UiView" : {
+                "NMGPromotionV2Manager" : "1...1000"
+            }
+        }
+    }
+}

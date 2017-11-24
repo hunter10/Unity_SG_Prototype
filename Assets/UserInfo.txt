@@ -1,0 +1,7 @@
+{
+	"userArray":
+	[
+		{"id":"alstn10246","earningRate":1.05,"betPrice":16240,"bonus":3.0,"earningPrice":812.0},
+		{"id":"saint951w","earningRate":1.01,"betPrice":100000,"bonus":0.87,"earningPrice":1868.91}
+	]
+}

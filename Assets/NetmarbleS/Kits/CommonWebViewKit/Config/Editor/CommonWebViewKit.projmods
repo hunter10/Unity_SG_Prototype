@@ -1,0 +1,21 @@
+{
+    "libs": [],
+    "frameworks": [
+        "WebKit.framework"
+    ],
+    "headerpaths": [], 
+    "files": [
+        "NMGSDKCommonWebViewKit.framework"
+    ],           
+    "folders": [
+        "NMGSDKCommonWebViewKit.framework/Resources"
+    ],
+    "excludes": [
+        "^.*.DS_Store$",
+        "^.*.meta$", 
+        "^.*.mdown^", 
+        "^.*.pdf$", 
+        "^.*.svn$"
+    ],
+    "buildSettings": {}
+}

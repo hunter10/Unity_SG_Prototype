@@ -1,0 +1,15 @@
+{
+    "TermsOfServiceKit" :  {
+        "Android" : {
+            "UIView" : {
+                "className" : "com.netmarble.uiview.TermsOfService",
+                "location" : "11001...11002"
+            }
+        },
+        "iOS" : {
+            "UiView" : {
+                "NMGTermsOfServiceManager" : "11001...11002"
+            }
+        }
+    }
+}

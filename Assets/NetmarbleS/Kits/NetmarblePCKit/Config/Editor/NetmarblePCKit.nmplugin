@@ -1,0 +1,12 @@
+{
+    "NetmarblePCKit" :  {
+        "Android" : {
+            "Channel" : {
+                "className" : "com.netmarble.netmarblepc.NetmarblePCImpl"
+            }
+        },
+        "iOS" : {
+        	"Channel" : "NMGNetmarblePCManager"
+        }
+    }
+}

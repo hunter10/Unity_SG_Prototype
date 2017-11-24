@@ -1,0 +1,19 @@
+{
+    "NotificationKit" :  {
+        "Android" : {
+            "TCPSession" : {
+                "className" : "com.netmarble.notification.NotificationManager"
+            },
+            "Transfer" : {
+                "className" : "com.netmarble.notification.NotificationManager"
+            }
+        },
+        "iOS" : {
+            "TCPSession" : "NMGNotificationManager",
+            "Transfer" : {
+                "className" : "NMGNotificationManager",
+                "host" : "notification"
+            }
+        }
+    }
+}

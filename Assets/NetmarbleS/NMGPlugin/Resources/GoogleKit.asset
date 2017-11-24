@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b1f69016013dfa409b40c86d792ea33, type: 3}
+  m_Name: GoogleKit
+  m_EditorClassIdentifier: 
+  gmsAppId: 229921429208
+  clientId: 229921429208-dpkceceqinutu3o92ukbus8s2ajevfen.apps.googleusercontent.com
+  clientSecret: NxfXFGHeO_ErvYCJ1G4TxyEb

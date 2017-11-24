@@ -1,0 +1,19 @@
+{
+    "libs": [],
+    "frameworks": [],
+    "headerpaths": [], 
+    "files": [
+        "NMGSDKForumKit.framework"
+    ],           
+    "folders": [
+        "NMGSDKForumKit.framework/Resources"
+    ],
+    "excludes": [
+        "^.*.DS_Store$",
+        "^.*.meta$", 
+        "^.*.mdown^", 
+        "^.*.pdf$", 
+        "^.*.svn$"
+    ],
+    "buildSettings": {}
+}

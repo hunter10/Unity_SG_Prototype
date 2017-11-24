@@ -1,0 +1,10 @@
+{
+    "CouponKit" :  {
+        "Android" : {
+            "UIView" : {
+                "className" : "com.netmarble.uiview.Coupon",
+                "location" : "21001"
+            }
+        }
+    }
+}

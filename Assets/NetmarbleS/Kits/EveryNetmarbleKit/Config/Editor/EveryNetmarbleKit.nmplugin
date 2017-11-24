@@ -1,0 +1,12 @@
+{
+    "EveryNetmarbleKit" :  {
+        "Android" : {
+            "Channel" : {
+                "className" : "com.netmarble.everynetmarble.EveryNetmarbleImpl"
+            }
+        },
+        "iOS" : {
+        	"Channel" : "NMGEveryNetmarbleManager"
+        }
+    }
+}

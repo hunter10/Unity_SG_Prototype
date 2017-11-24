@@ -1,0 +1,38 @@
+{
+    "libs": [
+        "libsqlite3.tbd", 
+        "libz.tbd"
+    ],
+    "frameworks": [
+        "SystemConfiguration.framework",
+        "AdSupport.framework",
+        "Security.framework"
+    ],
+    "headerpaths": [], 
+    "files": [
+        "NMGSDKCoreKit.framework"
+    ],           
+    "folders": [
+        "NMGSDKCoreKit.framework/Resources",
+        "KeychainItemWrapper|-fno-objc-arc",
+        "AFNetworking|-fobjc-arc",
+        "protobuf3|-fno-objc-arc",
+        "Socket|-fobjc-arc"
+    ],
+    "excludes": [
+        "^.*.DS_Store$",
+        "^.*.meta$", 
+        "^.*.mdown^", 
+        "^.*.pdf$", 
+        "^.*.svn$"
+    ],
+    "buildSettings": { 
+        "OTHER_LDFLAGS" : ["-ObjC"],
+        "CODE_SIGN_ENTITLEMENTS" : "NMGSDKCoreKit.framework/Resources/Entitlements.plist",
+        "ENABLE_BITCODE" : false,
+        "GCC_ENABLE_OBJC_EXCEPTIONS" : true
+    },
+    "systemCapabilities": {
+        "com.apple.Push" : true
+    }
+}

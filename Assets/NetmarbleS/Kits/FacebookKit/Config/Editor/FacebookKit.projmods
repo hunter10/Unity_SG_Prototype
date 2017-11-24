@@ -1,0 +1,19 @@
+{
+    "libs": [],
+    "frameworks": [],
+    "headerpaths": [], 
+    "files": [
+        "NMGSDKFacebookKit.framework",
+        "Facebook/FacebookSDK.framework",
+        "Facebook/FBSDKCoreKit.framework"
+    ],           
+    "folders": [],
+    "excludes": [
+        "^.*.DS_Store$",
+        "^.*.meta$", 
+        "^.*.mdown^", 
+        "^.*.pdf$", 
+        "^.*.svn$"
+    ],
+    "buildSettings": {}
+}

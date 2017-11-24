@@ -1,0 +1,11 @@
+{
+    "CoreKit" :  {
+         "Setting" : "CoreKitSetting",
+         "iOS" : {
+            "DeepLink" : {
+                "className" : "NMGAppEventsManager",
+                "host" : "app.event.manager"
+            }
+        }
+    }
+}

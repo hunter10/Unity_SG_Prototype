@@ -1,0 +1,19 @@
+{
+    "libs": [],
+    "frameworks": [],
+    "headerpaths": [], 
+    "files": [
+        "NMGSDKSelfCertificationKit.framework"
+    ],           
+    "folders": [
+        "NMGSDKSelfCertificationKit.framework/Resources"
+    ],
+    "excludes": [
+        "^.*.DS_Store$",
+        "^.*.meta$", 
+        "^.*.mdown^", 
+        "^.*.pdf$", 
+        "^.*.svn$"
+    ],
+    "buildSettings": {}
+}
