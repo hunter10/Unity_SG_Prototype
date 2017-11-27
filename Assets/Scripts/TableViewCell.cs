@@ -8,6 +8,8 @@ public abstract class TableViewCell<T> : ViewController
     // 셀에 대응하는 리스트 항목의 인덱스
     public int DataIndex { get; set; }
 
+    public virtual void ChangeColor(T itemdata, MyColor color) { }
+
     // 셀의 높이
     public float Height
     {

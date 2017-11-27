@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 [RequireComponent(typeof(ScrollRect))]
 public class TableViewController<T> : ViewController {
@@ -120,6 +121,8 @@ public class TableViewController<T> : ViewController {
             cell.gameObject.SetActive(false);
         }
     }
+
+    
 
     //visibleRect의 정의와 visibleRect를 갱신하는 메서드 구현
     private Rect visibleRect; // 리스트 항목을 셀의 형태로 표시하는 범위를 나타내는 사각형
@@ -276,5 +279,14 @@ public class TableViewController<T> : ViewController {
             }
         }
     }
+
+    // cells의 정보에 tabledata 인덱스로 접근해서 변경
+    public void CellAttributeChange(int idx, MyColor color)
+    {
+        var item = cells.FirstOrDefault(n => n.DataIndex == idx);
+        var findcell = cells.Find(item);
+        findcell.Value.ChangeColor(tableData[idx], color);
+    }
+
 }
 

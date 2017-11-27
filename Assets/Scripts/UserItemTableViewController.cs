@@ -49,9 +49,33 @@ public class UserItemTableViewController : TableViewController<UserItemData>
         LoadData();
     }
 
-    public void ChangeColorState()
-    {
+    
+    //public void CellAttributeChange(float baseBettingRate)
+    //{
+    //    foreach (var tempCell in cells)
+    //    {
+    //        UserItemTableViewCell userCell = tempCell as UserItemTableViewCell;
 
+    //        tableData[tempCell.DataIndex] as
+
+    //        //userCell.id.text = "<Color=#00ff00>" + userCell.id + "</color>";
+    //    }
+    //}
+
+    public void ChangeColorState(float baseBettingRate)
+    {
+        //CellAttributeChange(1, MyColor.RED);
+        //CellAttributeChange(3, MyColor.GREEN);
+
+        for(int i=0; i<tableData.Count; i++)
+        {
+            if(tableData[i].earningRate <= baseBettingRate)
+                CellAttributeChange(i, MyColor.GREEN);
+            else
+                CellAttributeChange(i, MyColor.RED);
+
+        }
     }
+    
 }
 
