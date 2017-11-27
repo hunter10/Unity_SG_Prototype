@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class UserItemData
 {
     public string id;           // 유저아이디
-    public float earningRate;   // 수익율
+    public int nEarningRate;    // 수익율
     public int betPrice;        // 배팅금액
     public float bonus;         // 보너스
     public float earning;       // 수익
@@ -28,7 +28,8 @@ public class UserItemTableViewCell : TableViewCell<UserItemData>
     public override void UpdteContent(UserItemData itemData)
     {
         id.text = itemData.id;
-        earningRate.text = string.Format("{0:N2}x", itemData.earningRate);
+        float rate = (float)itemData.nEarningRate / 100.0f;
+        earningRate.text = string.Format("{0:0.00}x", rate);
         betPrice.text = string.Format("{0:#,##0}", itemData.betPrice);
         bonus.text = string.Format("{0:N2}%", itemData.bonus);
         earning.text = string.Format("{0:N2}", itemData.earning);
@@ -43,7 +44,8 @@ public class UserItemTableViewCell : TableViewCell<UserItemData>
             colorString = "<Color=#00ff00>";
 
         id.text = colorString + itemdata.id + "</color>";
-        earningRate.text = colorString + itemdata.earningRate + "</color>";
+        string tempRate = string.Format("{0:0.00}x", (float)itemdata.nEarningRate / 100.0f);
+        earningRate.text = colorString + tempRate + "</color>";
         betPrice.text = colorString + itemdata.betPrice + "</color>";
         bonus.text = colorString + itemdata.bonus + "</color>";
         earning.text = colorString + itemdata.earning + "</color>";
