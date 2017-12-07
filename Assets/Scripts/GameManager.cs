@@ -2,6 +2,8 @@
 using System.Collections;
 using System;
 using UnityEngine.UI;
+//using System.Diagnostics;
+using System.Threading;
 
 public class GameManager : MonoSingleton<GameManager> {
 
@@ -37,16 +39,80 @@ public class GameManager : MonoSingleton<GameManager> {
         
     }
 
+    DateTime startTime;
+    public void OnGraphCalcStart()
+    {
+        //DateTime startT = DateTime.Now;
+        //UnityEngine.Debug.Log(startT.Millisecond);
+
+        //startTime = DateTime.Now;
+        //StartCoroutine(ProcGraphCalcStartTest());
+        //UnityEngine.Debug.Log(DateTime.Now.Ticks);
+        //UnityEngine.Debug.Log(DateTime.Now.Millisecond);
+
+
+
+        // C# 예제
+        int value = 2;
+        for (int power = 0; power <= 32; power++) {
+            string temp = string.Format("{0}^{1}={2:N0} (0x{2:X})", value, power, (long)Math.Pow(value, power));
+            Debug.Log(temp);
+        }
+
+
+
+        /*
+        // 시간지연 측정
+        Stopwatch stopWatch = new Stopwatch();
+        stopWatch.Start();
+        Thread.Sleep(10000);
+        stopWatch.Stop();
+        // Get the elapsed time as a TimeSpan value.
+        TimeSpan ts = stopWatch.Elapsed;
+
+        string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+            ts.Hours, ts.Minutes, ts.Seconds,
+            ts.Milliseconds / 10);
+
+        UnityEngine.Debug.Log(elapsedTime);
+        */
+    }
+
+    IEnumerator ProcGraphCalcStartTest()
+    {
+        while (true)
+        {
+            int elapsed = DateTime.Now.Millisecond - startTime.Millisecond;
+            growthFunc(elapsed);
+            //var at = growthFunc(elapsed);
+            //Debug.Log(elapsed + ", " + at);
+            yield return null;
+        }
+    }
+
+    void growthFunc(long ms)
+    {
+        double r = 0.00006f;
+        //return Math.Floor(100.0f * Math.Pow(Math.E, r * ms));
+        
+        double a = Math.Exp(r * ms);
+        //double a1 = Math.Pow(Math.E, r * ms);
+        //Debug.Log("a:" + a + ", a1:" + a1);
+        double b = 100 * a;
+        double c = Math.Floor(b);
+
+        UnityEngine.Debug.Log(a + ",   " + b + ",   " + c);
+    }
 
     public void OnGameStopClick()
     {
-        Debug.Log("유저리스트 : " + userListview.GetUserList().Count);
+        //Debug.Log("유저리스트 : " + userListview.GetUserList().Count);
         userListview.ChangeColorState(nBaseBettingRate);
     }
 
     public void OnBettingClick()
     {
-        Debug.Log("betting...");
+        //Debug.Log("betting...");
     }
 
     public void OnGameStartClick()
@@ -71,12 +137,12 @@ public class GameManager : MonoSingleton<GameManager> {
             {
                 deltatime = 0;
                 currCountDown++;
-                Debug.Log("CountDown : " + currCountDown);
+                //Debug.Log("CountDown : " + currCountDown);
                 gameLabel.text = string.Format("{0}", currCountDown);
                 if (currCountDown == COUNTDOWN)
                 {
                     currState = GAMESTATE.GAMING;
-                    Debug.Log("Game Start ...");
+                    //Debug.Log("Game Start ...");
                     break;
                 }
             }
